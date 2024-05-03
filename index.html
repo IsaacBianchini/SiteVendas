@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="Comprar()">Comprar</button>
+  </body>
+  <script>
+    function Comprar() {
+      var largura = 1000;
+      var altura = 800;
+
+      // Calcula a posição central da janela
+      var esquerda = (screen.width - largura) / 2;
+      var topo = (screen.height - altura) / 2;
+
+      // Abre a nova janela no centro
+      window.open(
+        "https://pay.kiwify.com.br/YhH0K1P",
+        "_blank",
+        "width=" +
+          largura +
+          ",height=" +
+          altura +
+          ",left=" +
+          esquerda +
+          ",top=" +
+          topo
+      );
+    }
+  </script>
+</html>
